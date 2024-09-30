@@ -1,0 +1,16 @@
+mixin tourItem(image, price, review, reviewcount, duration, title,tourPrice)
+    .tour
+        .tour-top
+            img.tour-image(src = image, alt='This-is-image')
+            span.tour-price= price 
+        .tour-content 
+            h3.tour-title= title    
+            .tour-rating
+                .tour-review
+                    .tour-star
+                        img(src='image/Shape.png', alt='')
+                    .tour-review-count
+                        span= review
+                        |   (#{reviewcount} reviews)
+                span.tour-duration Duration: #{duration} hours
+            a.tour-button(href='https://www.nimo.tv/thaygiaoba', target='_blank', rel='noopener') Tours Price $#{tourPrice} 

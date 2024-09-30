@@ -1,0 +1,18 @@
+include ./pug/mixins
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link( rel="preconnect", href="https://fonts.googleapis.com" )
+        link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin )
+        link(href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap", rel="stylesheet")
+        
+        link( rel="stylesheet", href="./app.css")
+    body 
+        .tour-list-container
+            .tour-list
+                +tourItem("image/martyna-bober-yd1_Tupnls4-unsplash.png" ,"From $61", 4.8, 12, 9,"Thailands Ayutthaya Temples Cruise from Bangkok",80)
+                +tourItem("image/image22.png", "From $59", 4.5, 15, 10,"FLoating Markets Day Trip from Bangkok",90 )
+                +tourItem("image/image33.jpg", "From $59", 4.5, 15, 10,"FLoating Markets Day Trip from Bangkok",90 )
