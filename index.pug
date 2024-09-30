@@ -1,4 +1,5 @@
 include ./pug/mixins
+
 doctype html
 html(lang="en")
     head
@@ -10,9 +11,16 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap", rel="stylesheet")
         
         link( rel="stylesheet", href="./app.css")
+        link(rel="stylesheet", href="styles/popular.css")
     body 
         .tour-list-container
             .tour-list
                 +tourItem("image/martyna-bober-yd1_Tupnls4-unsplash.png" ,"From $61", 4.8, 12, 9,"Thailands Ayutthaya Temples Cruise from Bangkok",80)
                 +tourItem("image/image22.png", "From $59", 4.5, 15, 10,"FLoating Markets Day Trip from Bangkok",90 )
                 +tourItem("image/image33.jpg", "From $59", 4.5, 15, 10,"FLoating Markets Day Trip from Bangkok",90 )
+        .container
+            .popular-list
+                +popularItem()
+                +popularItem()
+                +popularItem()
+                +popularItem()
